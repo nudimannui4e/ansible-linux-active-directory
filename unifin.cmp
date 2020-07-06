@@ -1,0 +1,9 @@
+- hosts: localhost                                                                                                                                                                                                                      roles:                                                                                                                                                                                                                                        - { role: ansible-linux-active-directory,
+              ldap_description: AD DC,
+              ldap_server_ip: 10.0.0.200,
+              ldap_domain: unifin.cmp,
+              ldap_server: unifin.cmp,
+              ldap_bind_dn: user@UniFin.cmp,
+              ldap_bind_pw: pass,
+              ldap_user_base: OU=UnionFinance,DC=UniFin,DC=cmp,
+              ldap_group_base: OU=UnionFinance,DC=UniFin,DC=cmp}
